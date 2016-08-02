@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'Glyphicons';
+	src: url(fonts/fontello.ttf);
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #877A6C;
+	margin: 0;
+}
+
+.sans35 {
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+/*NAV BAR*/
+
+#menu {
+
+}
+
+#menu_logo_container {
+	text-align: center;
+}
+
+#menu_logo {
+	display: inline-block;
+}
+
+#menu_nav_container {
+
+}
+
+#menu_ul {
+	list-style: none;
+	padding: 0;
+	font-size: 12px;
+	text-align: center;
+}
+
+.menu_li {
+	display: inline-block;
+	padding: 0 26px;
+}
+
+.menu_a {
+	text-decoration: none;
+	color: #877A6C;
+	text-transform: lowercase;
+}
+
+.menu_a:hover {
+	color: #655B51;
+}
+
+i {
+	font-style: normal;
+	font-family: 'Glyphicons';
+	color: #877A6C;
+}
+
+i:hover {
+	color: #655B51;
+}
+
+.carousel {
+	margin: 70px auto 0;
+	width: 900px;
+	display: block;
+}
+
+
+
+

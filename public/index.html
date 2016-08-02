@@ -1,1 +1,45 @@
-test hi
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<base href="/">
+	<title>Sans 35 Wedding Photography</title>
+</head>
+<body>
+	
+	<div class="sans35">
+
+		<!-- NAVIGATION HEADER -->
+		<nav id="menu">
+			<!-- Logo -->
+			<div id="menu_logo_container">
+				<div id="menu_logo">
+					<a href="/"><img src="img/logo.png"></a>
+				</div>
+			</div>
+			<!-- Nav Bar -->
+			<div id="menu_nav_container">
+				<ul id="menu_ul">
+					<li class="menu_li"><a href="#" class="menu_a">Home</a></li>
+					<li class="menu_li"><a href="#" class="menu_a">Engagement</a></li>
+					<li class="menu_li"><a href="#" class="menu_a">Wedding</a></li>
+					<li class="menu_li"><a href="#" class="menu_a">About</a></li>
+					<li class="menu_li"><a href="#" class="menu_a">Contact</a></li>
+					<li class="menu_li"><a href="#" class="menu_a"><i>&#xF308;</i></a></li>
+					<li class="menu_li"><a href="#" class="menu_a"><i>&#xF19A;</i></a></li>
+					<li class="menu_li"><a href="#" class="menu_a">|| Client Sign In</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<br>
+		<img class="carousel" src="img/carousel-1.jpg">
+		<!-- MENU VIEWS -->
+		<main ng-view></main>
+
+	</div>
+</body>
+</html>
