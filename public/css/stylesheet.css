@@ -24,11 +24,6 @@ body {
 	top: 0;
 	left: 0;
 	z-index: 100;
-	transition: background .5s;
-}
-
-#menu:hover {
-	background: rgba(0,0,0,.3);
 }
 
 #menu_logo_container {
@@ -45,20 +40,21 @@ body {
 
 #h1_a {
 	text-decoration: none;
-	color: #fff;
 	text-transform: uppercase;
 }
 
 #menu_h1 {
 	font-size: 48px;
-	margin: 20px 0 0;
-	color: #fff;
+	margin: 10px 0 0;
+	color: #222;
 	font-weight: 300;
+	background: rgba(255,255,255,.3);
+	padding: 0 345px;
 }
 
 #menu_ul {
 	list-style: none;
-	padding: 0;
+	padding: 0 0 5px;
 	font-size: 12px;
 	text-align: center;
 }
@@ -70,30 +66,17 @@ body {
 
 .menu_a {
 	text-decoration: none;
-	color: #fff;
+	color: #aaa;
 	text-transform: uppercase;
 }
 
 .menu_a:hover {
-	color: #222;
+	color: #555;
 	text-decoration: underline;
 }
 
-/*i {
-	font-style: normal;
-	font-family: 'Glyphicons';
-	color: #877A6C;
-}
-
-i:hover {
-	color: #655B51;
-}*/
-
 /*HOME.html*/
 
-/*.img-container {
-	margin: 70px 0 0;
-}*/
 
 /*FOOTER*/
 
@@ -116,15 +99,159 @@ i:hover {
 .footer_a {
 	text-decoration: none;
 	text-transform: uppercase;
-	color: #222;
+	color: #555;
 }
 
 .footer_a:hover {
 	color: #aaa;
 }
 
+/*ABOUT.html*/
+#about_button {
+	width: 220px;
+	height: 70px;
+	background: #222;
+	display: block;
+	margin: 165px auto 65px;
+}
+
+#about_hello {
+	color: #fff;
+	text-align: center;
+	font-weight: 300;
+	font-size: 48px;
+	padding-top: 2px;
+}
+
+#about_bio {
+	display: block;
+	width: 640px;
+	margin: 0 auto;
+	font-size: 12px;
+	font-weight: 300;
+}
+#about_hr {
+	margin: 22px 0 10px;
+}
+
+.about_p {
+	margin: 0 0 10px;
+}
+
+#about_img_container {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.about_img {
+	display: inline-block;
+	padding: 0 7.5px;
+	margin: 20px 0;
+}
+
+.about_img_size {
+	width: 200px;
+}
+
+#about_tagline {
+
+}
+
+#about_h3 {
+	font-weight: 300;
+	display: block;
+	text-align: center;
+}
+
+/*CONTACT.html*/
+#contact_glyphicons {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+	font-size: 60px;
+	font-family: 'Glyphicons';
+	color: #222;
+}
+
+#contact_text {
+	display: block;
+	text-align: center;
+	margin: 160px auto 0;
+}
+
+#contact_heading {
+	font-size: 48px;
+	margin: 0;
+}
+
+#contact_h3 {
+	font-weight: 300;
+	margin: 0;
+}
+
+#contact_email {
+	margin: 10px;
+}
+
+#contact_link {
+	text-decoration: none;
+	color: #aaa;
+	margin: 0;
+}
+
+#contact_link:hover {
+	color: #222;
+}
+
+#contact_h4 {
+	font-size: 18px;
+	font-weight: 300;
+	margin: 0;
+}
+
 /*SITE WIDE*/
 
 .black {
 	color: #222;
+}
+
+.red {
+	color: #993333;
+}
+
+/*Corrects the heading padding issue*/
+@media (max-width: 1190px) {
+	#menu_h1 {
+		padding: 0 10px;
+	}
+}
+
+/*Mobile & Tablet*/
+@media (max-width: 770px) {
+	#menu {
+		position: fixed;
+		width: 80%;
+		top: 0;
+		left: 0;
+		z-index: 100;
+	}
+
+	#menu_logo_container {
+		text-align: left;
+	}
+
+	#menu_h1 {
+		font-size: 38px;
+		padding: 0 100% 0 0;
+	}
+
+	#footer_nav_container {
+		display: none;
+	}
 }

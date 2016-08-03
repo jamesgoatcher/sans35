@@ -1,56 +1,57 @@
 <!DOCTYPE html>
-<html ng-app>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.min.css" media="screen">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-	<script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
-	<base href="/">
-	<title>Sans 35 Wedding Photography</title>
-</head>
-<body>
-	
-	<div class="sans35">
-		<!-- NAVIGATION HEADER -->
-		<nav id="menu">
-			<!-- Logo -->
-			<div id="menu_logo_container">
-				<div id="menu_logo">
-					<a id="h1_a" href="/"><h1 id="menu_h1">sans<span class="black">35</span>photography</h1></a>
-				</div>
-			</div>
-			<!-- Nav Bar -->
-			<div id="menu_nav_container">
-				<ul id="menu_ul">
-					<li class="menu_li"><a href="#" class="menu_a">Engagement</a></li>
-					<li class="menu_li"><a href="#" class="menu_a">Wedding</a></li>
-					<li class="menu_li"><a href="#" class="menu_a">Sign In</a></li>
-				</ul>
-			</div>
-		</nav>
-		<!-- Commercial license purchased from flickity.metafizzy.co -->
-		<div class="carousel img-container" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": true, "prevNextButtons": false }'>
-		  <div class="carousel-cell"><img src="../img/carousel-1.jpg"></div>
-		  <div class="carousel-cell"><img src="../img/carousel-2.jpg"></div>
-		  <div class="carousel-cell"><img src="../img/carousel-3.jpg"></div>
-		</div>
-		<!-- MENU VIEWS -->
-		<main ng-view></main>
-		<!-- FOOTER -->
-		<footer>
-			<div id="footer_nav_container">
-				<ul id="footer_ul">
-					<li class="menu_li"><a href="#" class="footer_a">About</a></li>
-					<li class="menu_li"><a href="#" class="footer_a">Contact</a></li>
-					<li class="menu_li"><a href="https://www.facebook.com/sans35photography" class="footer_a" target="_blank">Facebook</a></li>
-					<li class="menu_li"><a href="#" class="footer_a">WordPress</a></li>
-					<li class="menu_li"><a href="http://www.jamesgoatcher.com" class="footer_a" target="_blank">&copy;2016 JPG Web Design</a></li>
-				</ul>
-			</div>
-		</footer>
+<html ng-app="Sans35App">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+		<link rel="stylesheet" type="text/css" href="css/gallery.css"/>
+		<link rel="stylesheet" type="text/css" href="css/gallery.theme.css"/>
+		<script type="text/javascript" src="js/app.js"></script>
+		<base href="/">
+		<title>Sans 35 Wedding Photography</title>
+	</head>
+	<body>
+		
+		<div class="sans35">
 
-	</div>
-</body>
+			<!-- NAVIGATION HEADER -->
+			<nav id="menu">
+				<!-- Logo -->
+				<div id="menu_logo_container">
+					<div id="menu_logo">
+						<a id="h1_a" href="/"><h1 id="menu_h1">sans<span class="red">35</span>photography</h1></a>
+					</div>
+				</div>
+				<!-- Nav Bar -->
+				<div id="menu_nav_container">
+					<ul id="menu_ul">
+						<li class="menu_li"><a href="/engagement" class="menu_a">Engagement</a></li>
+						<li class="menu_li"><a href="/wedding" class="menu_a">Wedding</a></li>
+						<li class="menu_li"><a href="/signup" class="menu_a">Sign In</a></li>
+					</ul>
+				</div>
+			</nav>
+
+
+			<!-- MENU VIEW PAGES -->
+			<main ng-view></main>
+
+			<!-- FOOTER -->
+			<footer>
+				<div id="footer_nav_container">
+					<ul id="footer_ul">
+						<li class="menu_li"><a href="/about" class="footer_a">About</a></li>
+						<li class="menu_li"><a href="/contact" class="footer_a">Contact</a></li>
+						<li class="menu_li"><a href="https://www.facebook.com/sans35photography" class="footer_a" target="_blank">Facebook</a></li>
+						<li class="menu_li"><a href="#" class="footer_a">WordPress</a></li>
+						<li class="menu_li"><a href="http://www.jamesgoatcher.com" class="footer_a" target="_blank">&copy;2016 JPG Web Design</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		</div>
+		
+	</body>
 </html>
