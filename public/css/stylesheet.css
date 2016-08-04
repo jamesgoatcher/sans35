@@ -16,7 +16,7 @@ body {
 	padding: 0;
 }
 
-/*NAV BAR*/
+/*NAV BAR, desktop*/
 
 #menu {
 	position: fixed;
@@ -24,6 +24,7 @@ body {
 	top: 0;
 	left: 0;
 	z-index: 100;
+	background: rgba(255,255,255,.3);
 }
 
 #menu_logo_container {
@@ -48,8 +49,7 @@ body {
 	margin: 10px 0 0;
 	color: #222;
 	font-weight: 300;
-	background: rgba(255,255,255,.3);
-	padding: 0 345px;
+	/*background: rgba(255,255,255,.3);*/
 }
 
 #menu_ul {
@@ -73,6 +73,24 @@ body {
 .menu_a:hover {
 	color: #555;
 	text-decoration: underline;
+}
+
+/*NAV BAR, mobile*/
+
+#menu_nav_button-m {
+	display: none;
+}
+
+#menu_nav_container-m {
+	display: none;
+}
+
+#menu_ul-m {
+	display: none;
+}
+
+.menu_li-m {
+	display: none;
 }
 
 /*HOME.html*/
@@ -215,6 +233,41 @@ i {
 	margin: 0;
 }
 
+/*ENGAGEMENT*/
+#engagement {
+	margin: 160px auto 0;
+	text-align: center;
+}
+
+#engagement_div_container {
+	display: block;
+	width: 75%;
+	margin: 0 auto 50px;
+}
+
+.engagement_div {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+/*WEDDING*/
+#wedding {
+	margin: 160px auto 0;
+	text-align: center;
+}
+
+#wedding_div_container {
+	display: block;
+	width: 75%;
+	margin: 0 auto 50px;
+}
+
+.wedding_div {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+
 /*SITE WIDE*/
 
 .black {
@@ -225,33 +278,80 @@ i {
 	color: #993333;
 }
 
-/*Corrects the heading padding issue*/
-@media (max-width: 1190px) {
-	#menu_h1 {
-		padding: 0 10px;
-	}
+.wide {
+	font-weight: 400;
 }
 
-/*Mobile & Tablet*/
+.small {
+	font-size: 10px;
+}
+
+
+/*Mobile & Tablet, 770px*/
 @media (max-width: 770px) {
+
 	#menu {
 		position: fixed;
-		width: 80%;
+		width: 100%;
 		top: 0;
 		left: 0;
 		z-index: 100;
+		padding-bottom: 15px;
+		background: rgba(255,255,255,1);
 	}
 
 	#menu_logo_container {
-		text-align: left;
+		text-align: center;
 	}
 
 	#menu_h1 {
 		font-size: 38px;
-		padding: 0 100% 0 0;
+		display: inline-block;
+	}
+
+	#menu_nav_container {
+		display: none;
 	}
 
 	#footer_nav_container {
 		display: none;
 	}
+
+	/*NAV BAR, mobile*/
+
+	#menu_nav_button-m {
+		display: inline-block;
+		font-size: 38px;
+		margin: 0 0 0 20px;
+	}
+
+	#menu_nav_container-m {
+		display: block;
+		padding: 0 0 300px;
+		margin: 30px 0 0;
+	}
+
+	#menu_ul-m {
+		list-style: none;
+		padding: 0 ;
+		font-size: 16px;
+		text-align: center;
+		display: block;
+	}
+
+	.menu_li-m {
+		display: block;
+		padding: 30px 0;
+	}
+
+	.menu_li-m-glyph {
+		padding: 30px 10px;
+		text-align: center;
+		display: inline-block;
+	}
+
+	.menu_li-m-i {
+		font-size: 20px;
+	}
+
 }
