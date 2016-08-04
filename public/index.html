@@ -3,12 +3,14 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
 		<link rel="stylesheet" type="text/css" href="css/gallery.css"/>
 		<link rel="stylesheet" type="text/css" href="css/gallery.theme.css"/>
 		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/nav-menu.js"></script>
 		<base href="/">
 		<title>Sans 35 Wedding Photography</title>
 	</head>
@@ -22,7 +24,7 @@
 				<div id="menu_logo_container">
 					<div id="menu_logo">
 						<a id="h1_a" href="/"><h1 id="menu_h1"><span class="wide">sans</span><span class="red">35</span><span class="wide">photography</span></h1></a>
-						<i id="menu_nav_button-m">&#xF0C9;</i>
+						<i class="menu_nav_button-m"></i>
 					</div>
 				</div>
 				<!-- Nav Bar, DESKTOP -->
@@ -34,17 +36,19 @@
 					</ul>
 				</div>
 				<!-- Nav Bar, MOBILE -->
-				<div id="menu_nav_container-m">
+				<div class="menu_nav_container-m">
 					<ul id="menu_ul-m">
-						<li class="menu_li-m"><a href="/" class="menu_a">Home</a></li>
-						<li class="menu_li-m"><a href="/engagement" class="menu_a">Engagement</a></li>
-						<li class="menu_li-m"><a href="/wedding" class="menu_a">Wedding</a></li>
-						<li class="menu_li-m"><a href="/about" class="menu_a">About</a></li>
-						<li class="menu_li-m"><a href="/contact" class="menu_a">Contact</a></li>
-						<li class="menu_li-m"><a href="/signin" class="menu_a">Sign In</a></li>
-						<li class="menu_li-m-glyph"><a href="https://www.facebook.com/sans35photography" class="menu_a" target="_blank"><i class="menu_li-m-i">&#xF308;</i></a></li>
-						<li class="menu_li-m-glyph"><a href="#" class="menu_a" target="_blank"><i class="menu_li-m-i">&#xF19A;</i></a></li>
-						<li class="menu_li-m small"><a href="http://www.jamesgoatcher.com" class="menu_a" target="_blank">&copy;2016 JPG Web Design</a></li>
+						<li class="menu_li-m"><a href="/" class="menu_a-m">Home</a></li>
+						<li class="menu_li-m"><a href="/engagement" class="menu_a-m">Engagement</a></li>
+						<li class="menu_li-m"><a href="/wedding" class="menu_a-m">Wedding</a></li>
+						<li class="menu_li-m"><a href="/about" class="menu_a-m">About</a></li>
+						<li class="menu_li-m-glyph"><a href="#" class="menu_a-m" target="_blank">Blog</a></li>
+						<li class="menu_li-m"><a href="/testimonial" class="menu_a-m">Testimonial</a></li>
+						<li class="menu_li-m"><a href="/contact" class="menu_a-m">Contact</a></li>
+						<li class="menu_li-m"><a href="/signin" class="menu_a-m">Sign In</a></li>
+						<li class="menu_li-m-glyph"><a href="https://www.facebook.com/sans35photography" class="menu_a-m" target="_blank"><i class="menu_li-m-i">&#xF308;</i></a></li>
+						<li class="menu_li-m-glyph"><a href="http://www.yelp.com/biz/sans-35-photography-los-angeles?osq=sans35" class="menu_a-m" target="_blank"><i class="menu_li-m-i">&#xE804;</i></a></li>
+						<li class="menu_li-m small"><a href="http://www.jamesgoatcher.com" class="menu_a-m" target="_blank">&copy;2016 JPG Web Design</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -58,9 +62,10 @@
 				<div id="footer_nav_container">
 					<ul id="footer_ul">
 						<li class="menu_li"><a href="/about" class="footer_a">About</a></li>
+						<li class="menu_li"><a href="https://www.sans35weddings.com" class="footer_a" target="_blank">Blog</a></li>
+						<li class="menu_li"><a href="/testimonial" class="footer_a">Testimonial</a></li>
 						<li class="menu_li"><a href="/contact" class="footer_a">Contact</a></li>
 						<li class="menu_li"><a href="https://www.facebook.com/sans35photography" class="footer_a" target="_blank">Facebook</a></li>
-						<li class="menu_li"><a href="#" class="footer_a">WordPress</a></li>
 						<li class="menu_li"><a href="http://www.jamesgoatcher.com" class="footer_a" target="_blank">&copy;2016 JPG Web Design</a></li>
 					</ul>
 				</div>

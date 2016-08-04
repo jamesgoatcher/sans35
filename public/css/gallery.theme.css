@@ -1,12 +1,13 @@
 .gallery .control-button {
   color: #ccc;
   color: rgba(255, 255, 255, 0.4);
+  cursor: default;
 }
 
-.gallery .control-button:hover {
+/*.gallery .control-button:hover {
   color: white;
   color: rgba(255, 255, 255, 0.8);
-}
+}*/
 
 /*
 	Theme controls how everything looks in Gallery CSS.
@@ -17,6 +18,7 @@ figure {
 
 .gallery {
   position: relative;
+  margin-top: 80px;
 }
 .gallery .item {
   height: 800px;
@@ -26,7 +28,7 @@ figure {
 }
 .gallery .controls {
   position: absolute;
-  bottom: 0;
+  bottom: 90px;
   width: 100%;
   text-align: center;
 }
@@ -38,3 +40,11 @@ figure {
   text-decoration: none;
   transition: color .1s;
 }
+
+/*Mobile & Tablet, 770px*/
+@media (max-width: 770px) {
+  .home_img {
+    width: 100%;
+  }
+
+

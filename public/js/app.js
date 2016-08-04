@@ -9,14 +9,16 @@ var app = angular.module('Sans35App', ['ngRoute']);
 			controller: 'HomeCtrl'
 		}).when('/about', {
 			templateUrl: 'partials/about.html'
+		}).when('/testimonial', {
+			templateUrl: 'partials/testimonial.html'
 		}).when('/contact', {
 			templateUrl: 'partials/contact.html'
 		}).when('/engagement', {
 			templateUrl: 'partials/engagement.html'
 		}).when('/wedding', {
 			templateUrl: 'partials/wedding.html'
-		}).when('/signup', {
-			templateUrl: 'partials/wedding.html'
+		}).when('/signin', {
+			templateUrl: 'partials/signin.html'
 		});
 
 	}]);

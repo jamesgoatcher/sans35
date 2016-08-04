@@ -25,6 +25,7 @@ body {
 	left: 0;
 	z-index: 100;
 	background: rgba(255,255,255,.3);
+	background: white;
 }
 
 #menu_logo_container {
@@ -33,6 +34,7 @@ body {
 
 #menu_logo {
 	display: inline-block;
+	white-space: nowrap;
 }
 
 #menu_nav_container {
@@ -77,24 +79,13 @@ body {
 
 /*NAV BAR, mobile*/
 
-#menu_nav_button-m {
+.menu_nav_button-m {
 	display: none;
 }
 
-#menu_nav_container-m {
+.menu_nav_container-m {
 	display: none;
 }
-
-#menu_ul-m {
-	display: none;
-}
-
-.menu_li-m {
-	display: none;
-}
-
-/*HOME.html*/
-
 
 /*FOOTER*/
 
@@ -130,7 +121,7 @@ body {
 	height: 70px;
 	background: #222;
 	display: block;
-	margin: 165px auto 65px;
+	margin: 160px auto 65px;
 }
 
 #about_hello {
@@ -143,10 +134,11 @@ body {
 
 #about_bio {
 	display: block;
-	width: 640px;
+	max-width: 700px;
 	margin: 0 auto;
 	font-size: 12px;
 	font-weight: 300;
+	padding: 0 10px;
 }
 #about_hr {
 	margin: 22px 0 10px;
@@ -169,17 +161,52 @@ body {
 }
 
 .about_img_size {
-	width: 200px;
+	width: 220px;
 }
 
 #about_tagline {
-
+	display: block;
 }
 
 #about_h3 {
 	font-weight: 300;
 	display: block;
 	text-align: center;
+}
+
+/*TESTIMONIAL*/
+
+#testimonial_button {
+	width: 340px;
+	height: 70px;
+	background: #222;
+	display: block;
+	margin: 160px auto 65px;
+}
+
+#testimonial_hello {
+	color: #fff;
+	text-align: center;
+	font-weight: 300;
+	font-size: 48px;
+	padding-top: 2px;
+}
+
+#testimonial_div {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.testimonial_h3 {
+	font-size: 1rem;
+}
+
+.testimonial_p {
+	font-size: 12px;
+}
+
+.testimonial_p:last-of-type {
+	padding-bottom: 40px; 
 }
 
 /*CONTACT.html*/
@@ -235,13 +262,31 @@ i {
 
 /*ENGAGEMENT*/
 #engagement {
-	margin: 160px auto 0;
+	margin: 150px auto 0;
 	text-align: center;
+}
+
+#engagement_hello {
+	color: #222;
+	text-align: center;
+	font-weight: 300;
+	font-size: 12px;
+}
+
+.engagement_a {
+	text-decoration: none;
+	color: #222;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.engagement_a:hover {
+	color: #aaa;
 }
 
 #engagement_div_container {
 	display: block;
-	width: 75%;
+	max-width: 900px;
 	margin: 0 auto 50px;
 }
 
@@ -252,13 +297,31 @@ i {
 
 /*WEDDING*/
 #wedding {
-	margin: 160px auto 0;
+	margin: 150px auto 0;
 	text-align: center;
+}
+
+#wedding_hello {
+	color: #222;
+	text-align: center;
+	font-weight: 300;
+	font-size: 12px;
+}
+
+.wedding_a {
+	text-decoration: none;
+	color: #222;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.wedding_a:hover {
+	color: #aaa;
 }
 
 #wedding_div_container {
 	display: block;
-	width: 75%;
+	max-width: 900px;
 	margin: 0 auto 50px;
 }
 
@@ -286,6 +349,9 @@ i {
 	font-size: 10px;
 }
 
+.thin {
+	font-weight: 300;
+}
 
 /*Mobile & Tablet, 770px*/
 @media (max-width: 770px) {
@@ -296,7 +362,7 @@ i {
 		top: 0;
 		left: 0;
 		z-index: 100;
-		padding-bottom: 15px;
+		padding-bottom: 40px;
 		background: rgba(255,255,255,1);
 	}
 
@@ -305,8 +371,11 @@ i {
 	}
 
 	#menu_h1 {
-		font-size: 38px;
-		display: inline-block;
+		font-size: 7vw;
+		position: fixed;
+		top: -5px;
+		left: 0;
+		margin: 0;
 	}
 
 	#menu_nav_container {
@@ -317,18 +386,88 @@ i {
 		display: none;
 	}
 
-	/*NAV BAR, mobile*/
-
-	#menu_nav_button-m {
-		display: inline-block;
-		font-size: 38px;
-		margin: 0 0 0 20px;
+	.about_img {
+		padding: 0;
+		margin: 10px 0;
 	}
 
-	#menu_nav_container-m {
+	#about_h3 {
+		margin: 0 0 10px 0;
+	}
+
+	#engagement {
+		margin: 80px auto 0;
+	}
+
+	#engagement_div_container {
+		max-width: 626px;
+	}
+
+	.engagement_div {
+		padding: 0 1px;
+	}
+
+	.engagement_img {
+		width: 200px;
+	}
+
+	#wedding {
+		margin: 80px auto 0;
+	}
+
+	#wedding_div_container {
+		max-width: 626px;
+	}
+
+	.wedding_div {
+		padding: 0 1px;
+	}
+
+	.wedding_img {
+		width: 200px;
+	}
+
+	/*NAV BAR, mobile*/
+
+	#test {
+		position: relative;
+	}
+
+	.menu_nav_button-m {
+		display: inline-block;
+		position: fixed;
+	}
+
+	.menu_nav_button-m:before {
+		display: inline-block;
+		font-size: 7vw;
+		content: '\F0C9';
+		font-family: 'Glyphicons';
+		right: 10px;
+		top: 0;
+		position: fixed;
+	}
+
+	.menu_nav_button-m-active {
+		display: inline-block;
+		position: fixed;
+	}
+
+	.menu_nav_button-m-active:before {
+		display: inline-block;
+		font-size: 6vw;
+		content: '\E803';
+		font-family: 'Glyphicons';
+		right: 10px;
+		top: 5px;
+		position: fixed;
+	}
+
+	.menu_nav_container-m-active {
 		display: block;
 		padding: 0 0 300px;
 		margin: 30px 0 0;
+		background: rgba(255,255,255,.5);
 	}
 
 	#menu_ul-m {
@@ -344,6 +483,16 @@ i {
 		padding: 30px 0;
 	}
 
+	.menu_a-m {
+		text-decoration: none;
+		color: #aaa;
+		text-transform: uppercase;
+	}
+	.menu_a-m:hover {
+		color: #555;
+		text-decoration: underline;
+	}
+
 	.menu_li-m-glyph {
 		padding: 30px 10px;
 		text-align: center;
@@ -353,5 +502,13 @@ i {
 	.menu_li-m-i {
 		font-size: 20px;
 	}
+
+}
+
+/*@media screen and (min-width: 770px) {
+
+	.menu_nav_container-m-active {
+		display: none;
+	}*/
 
 }
