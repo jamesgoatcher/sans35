@@ -334,7 +334,7 @@ i {
 
 .wedding_show-div {
 	white-space: nowrap;
-	margin-top: 121px;
+	margin-top: 151px;
 }
 
 .wedding_show-img {
@@ -469,6 +469,10 @@ i {
 
 	.wedding_show-img {
 		height: 500px;
+	}
+
+	.wedding_show-a {
+		margin-top: 50px;
 	}
 
 	/*NAV BAR, mobile*/
