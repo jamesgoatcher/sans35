@@ -330,6 +330,30 @@ i {
 	padding: 0 5px;
 }
 
+/*WEDDING - SHOW*/
+
+.wedding_show-div {
+	white-space: nowrap;
+	margin-top: 121px;
+}
+
+.wedding_show-img {
+	display: inline;
+	height: 650px;
+}
+
+.wedding_show-a {
+	position: fixed;
+	margin-top: 10px;
+	display: block;
+	text-decoration: none;
+	color: #222;
+	font-weight: 300;
+}
+
+.wedding_show-a:hover {
+	color: #aaa;
+}
 
 /*SITE WIDE*/
 
@@ -403,6 +427,10 @@ i {
 		margin: 100px auto 65px;
 	}
 
+	#testimonial_div {
+		padding: 0 10px;
+	}
+
 	#contact_text {
 		margin: 100px auto 0;
 	}
@@ -437,6 +465,10 @@ i {
 
 	.wedding_img {
 		width: 200px;
+	}
+
+	.wedding_show-img {
+		height: 500px;
 	}
 
 	/*NAV BAR, mobile*/
@@ -589,6 +621,10 @@ i {
 
 	.wedding_img {
 		width: 200px;
+	}
+
+	.wedding_show-img {
+		height: 320px;
 	}
 
 	/*NAV BAR, mobile*/

@@ -19,6 +19,8 @@ var app = angular.module('Sans35App', ['ngRoute']);
 			templateUrl: 'partials/wedding.html'
 		}).when('/signin', {
 			templateUrl: 'partials/signin.html'
+		}).when('/show', {
+			templateUrl: 'partials/wedding/show.html'
 		});
 
 	}]);
