@@ -466,7 +466,7 @@ i {
 	.menu_nav_container-m-active {
 		display: block;
 		padding: 0 0 300px;
-		margin: 30px 0 0;
+		margin: 60px 0 0;
 		background: rgba(255,255,255,.5);
 	}
 
@@ -480,7 +480,7 @@ i {
 
 	.menu_li-m {
 		display: block;
-		padding: 30px 0;
+		padding: 20px 0;
 	}
 
 	.menu_a-m {
@@ -494,7 +494,7 @@ i {
 	}
 
 	.menu_li-m-glyph {
-		padding: 30px 10px;
+		padding: 20px 10px;
 		text-align: center;
 		display: inline-block;
 	}
@@ -505,10 +505,154 @@ i {
 
 }
 
-/*@media screen and (min-width: 770px) {
+/*Mobile & Tablet, 670px*/
+@media (max-width: 670px) {
+
+	#menu {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		padding-bottom: 40px;
+		background: rgba(255,255,255,1);
+	}
+
+	#menu_logo_container {
+		text-align: center;
+	}
+
+	#menu_h1 {
+		font-size: 7vw;
+		position: fixed;
+		top: -5px;
+		left: 0;
+		margin: 0;
+	}
+
+	#menu_nav_container {
+		display: none;
+	}
+
+	#footer_nav_container {
+		display: none;
+	}
+
+	.about_img {
+		padding: 0;
+		margin: 10px 0;
+	}
+
+	#about_h3 {
+		margin: 0 0 10px 0;
+	}
+
+	#engagement {
+		margin: 80px auto 0;
+	}
+
+	#engagement_div_container {
+		max-width: 626px;
+	}
+
+	.engagement_div {
+		padding: 0 1px;
+	}
+
+	.engagement_img {
+		width: 200px;
+	}
+
+	#wedding {
+		margin: 80px auto 0;
+	}
+
+	#wedding_div_container {
+		max-width: 626px;
+	}
+
+	.wedding_div {
+		padding: 0 1px;
+	}
+
+	.wedding_img {
+		width: 200px;
+	}
+
+	/*NAV BAR, mobile*/
+
+	#test {
+		position: relative;
+	}
+
+	.menu_nav_button-m {
+		display: inline-block;
+		position: fixed;
+	}
+
+	.menu_nav_button-m:before {
+		display: inline-block;
+		font-size: 7vw;
+		content: '\F0C9';
+		font-family: 'Glyphicons';
+		right: 10px;
+		top: 0;
+		position: fixed;
+	}
+
+	.menu_nav_button-m-active {
+		display: inline-block;
+		position: fixed;
+	}
+
+	.menu_nav_button-m-active:before {
+		display: inline-block;
+		font-size: 6vw;
+		content: '\E803';
+		font-family: 'Glyphicons';
+		right: 10px;
+		top: 5px;
+		position: fixed;
+	}
 
 	.menu_nav_container-m-active {
-		display: none;
-	}*/
+		display: block;
+		padding: 0 0 300px;
+		margin: 30px 0 0;
+		background: rgba(255,255,255,.5);
+	}
+
+	#menu_ul-m {
+		list-style: none;
+		padding: 0 ;
+		font-size: 14px;
+		text-align: center;
+		display: block;
+	}
+
+	.menu_li-m {
+		display: block;
+		padding: 16px 0;
+	}
+
+	.menu_a-m {
+		text-decoration: none;
+		color: #aaa;
+		text-transform: uppercase;
+	}
+	.menu_a-m:hover {
+		color: #555;
+		text-decoration: underline;
+	}
+
+	.menu_li-m-glyph {
+		padding: 20px 10px;
+		text-align: center;
+		display: inline-block;
+	}
+
+	.menu_li-m-i {
+		font-size: 20px;
+	}
 
 }
