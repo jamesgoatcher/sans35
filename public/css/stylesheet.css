@@ -386,6 +386,10 @@ i {
 		display: none;
 	}
 
+	#about_button {
+		margin: 100px auto 65px;
+	}
+
 	.about_img {
 		padding: 0;
 		margin: 10px 0;
@@ -393,6 +397,14 @@ i {
 
 	#about_h3 {
 		margin: 0 0 10px 0;
+	}
+
+	#testimonial_button {
+		margin: 100px auto 65px;
+	}
+
+	#contact_text {
+		margin: 100px auto 0;
 	}
 
 	#engagement {
@@ -632,7 +644,7 @@ i {
 
 	.menu_li-m {
 		display: block;
-		padding: 16px 0;
+		padding: 15px 0;
 	}
 
 	.menu_a-m {
