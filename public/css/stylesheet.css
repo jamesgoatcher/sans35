@@ -356,6 +356,157 @@ i {
 	color: #aaa;
 }
 
+/*SIGN IN*/
+
+#signin {
+	margin-top: 160px;
+}
+
+#signin_container {
+	max-width: 700px;
+	padding: 0 10px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#signin_button {
+	width: 250px;
+	height: 70px;
+	background: #222;
+	display: block;
+	margin: 0 auto;
+}
+
+#signin_hello {
+	color: #fff;
+	text-align: center;
+	font-weight: 300;
+	font-size: 48px;
+	padding-top: 2px;
+}
+
+#signin_form {
+	display: block;
+}
+
+.signin_input {
+	display: block;
+	margin: 40px auto;
+	width: 330px;
+	height: 35px;
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+.signin_input-button {
+	width: 356px;
+	padding: 15px 0;
+	border: 0;
+	background: #222;
+	color: #fff;
+	font-size: 14px;
+}
+
+.signin_p {
+	color: #222;
+	text-align: center;
+	font-weight: 300;
+	font-size: 12px;
+	margin: 30px;
+}
+
+.signin_a {
+	text-decoration: none;
+	color: #aaa;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.signin_a:hover {
+	color: #222;
+}
+
+/*SIGN UP*/
+
+#signup {
+	margin-top: 160px;
+}
+
+#signup_container {
+	max-width: 700px;
+	padding: 0 10px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#signup_button {
+	width: 250px;
+	height: 70px;
+	background: #222;
+	display: block;
+	margin: 0 auto;
+}
+
+#signup_hello {
+	color: #fff;
+	text-align: center;
+	font-weight: 300;
+	font-size: 48px;
+	padding-top: 2px;
+}
+
+#signup_form {
+	display: block;
+}
+
+.signup_input {
+	display: block;
+	margin: 40px auto;
+	width: 330px;
+	height: 35px;
+	padding-left: 20px;
+	font-size: 14px;
+}
+
+.signup_input-name {
+	display: inline;
+	margin: 40px 0 0 1px;
+	width: 149px;
+	height: 35px;
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+.signup_input-button {
+	width: 356px;
+	padding: 15px 0;
+	border: 0;
+	background: #222;
+	color: #fff;
+	font-size: 14px;
+}
+
+.signup_p {
+	color: #222;
+	text-align: center;
+	font-weight: 300;
+	font-size: 12px;
+	margin: 30px;
+}
+
+.signup_a {
+	text-decoration: none;
+	color: #aaa;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.signup_a:hover {
+	color: #222;
+}
+
 /*SITE WIDE*/
 
 .black {

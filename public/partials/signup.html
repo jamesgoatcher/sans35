@@ -1,0 +1,20 @@
+<!-- SIGN UP -->
+<section id="signup">
+	<div id="signup_container">
+		<div id="signup_button">
+			<h2 id="signup_hello">SIGN UP</h2>
+		</div>
+		<form id="signup_form" ng-submit="signup.signUp()">
+			<input class="signup_input-name" type="text" placeholder="FIRST NAME #1" ng-model="signup.form.firstNameOne">
+			<input class="signup_input-name" type="text" placeholder="LAST NAME #1" ng-model="signup.form.lastNameOne">
+			<br>
+			<input class="signup_input-name" type="text" placeholder="FIRST NAME #2" ng-model="signup.form.firstNameTwo">
+			<input class="signup_input-name" type="text" placeholder="LAST NAME #2" ng-model="signup.form.lastNameTwo">
+			<br>
+			<input class="signup_input" type="text" placeholder="EMAIL" ng-model="signup.form.email">
+			<input class="signup_input" type="password" placeholder="PASSWORD" ng-model="signup.form.password">
+			<input class="signup_input-button" type="submit" value="SIGN UP">
+		</form>
+		<p class="signup_p">ALREADY HAVE AN ACCOUNT?  <a class="signup_a" href="/signin">SIGN IN!</p></h3>
+	</div>
+</section>
