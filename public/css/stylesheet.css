@@ -178,20 +178,22 @@ body {
 
 /*TESTIMONIAL*/
 
-#testimonial_button {
+/*#testimonial_button {
 	width: 340px;
 	height: 70px;
 	background: #222;
 	display: block;
 	margin: 160px auto 65px;
-}
+}*/
 
 #testimonial_hello {
-	color: #fff;
+	color: #222;
 	text-align: center;
 	font-weight: 300;
 	font-size: 48px;
-	padding-top: 2px;
+	display: block;
+/*	padding-top: 2px;*/
+	margin: 160px auto 65px;
 }
 
 #testimonial_div {
@@ -208,7 +210,7 @@ body {
 }
 
 .testimonial_p:last-of-type {
-	padding-bottom: 40px; 
+	padding-bottom: 70px; 
 }
 
 /*CONTACT.html*/
@@ -233,11 +235,11 @@ i {
 }
 
 #contact_heading {
-	font-size: 48px;
 	margin: 0;
 }
 
 #contact_h3 {
+	font-size: 48px;
 	font-weight: 300;
 	margin: 0;
 }
@@ -474,6 +476,24 @@ i {
 .signup_input-name {
 	display: inline;
 	margin: 40px 0 0 1px;
+	width: 149px;
+	height: 35px;
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+.signup_input-name:nth-of-type(1) {
+	display: inline;
+	margin: 0 0 0 1px;
+	width: 149px;
+	height: 35px;
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+.signup_input-name:nth-of-type(2) {
+	display: inline;
+	margin: 0 0 0 1px;
 	width: 149px;
 	height: 35px;
 	font-size: 14px;
