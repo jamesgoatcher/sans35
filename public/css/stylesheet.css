@@ -268,6 +268,7 @@ i {
 #engagement {
 	margin: 150px auto 0;
 	text-align: center;
+	padding-bottom: 20px;
 }
 
 #engagement_hello {
@@ -303,6 +304,7 @@ i {
 #wedding {
 	margin: 150px auto 0;
 	text-align: center;
+	padding-bottom: 20px;
 }
 
 #wedding_hello {
@@ -359,7 +361,7 @@ i {
 	color: #aaa;
 }
 
-/*SIGN IN*/
+/*SIGN IN.html*/
 
 #signin {
 	margin-top: 160px;
@@ -372,22 +374,6 @@ i {
 	margin: 0 auto;
 	text-align: center;
 }
-
-/*#signin_button {
-	width: 250px;
-	height: 70px;
-	background: #222;
-	display: block;
-	margin: 0 auto;
-}
-
-#signin_hello {
-	color: #fff;
-	text-align: center;
-	font-weight: 300;
-	font-size: 48px;
-	padding-top: 2px;
-}*/
 
 #signin_form {
 	display: block;
@@ -430,7 +416,7 @@ i {
 	color: #222;
 }
 
-/*SIGN UP*/
+/*SIGN UP.html*/
 
 #signup {
 	margin-top: 160px;
@@ -444,22 +430,6 @@ i {
 	text-align: center;
 }
 
-/*#signup_button {
-	width: 250px;
-	height: 70px;
-	background: #222;
-	display: block;
-	margin: 0 auto;
-}
-
-#signup_hello {
-	color: #fff;
-	text-align: center;
-	font-weight: 300;
-	font-size: 48px;
-	padding-top: 2px;
-}*/
-
 #signup_form {
 	display: block;
 }
@@ -470,7 +440,7 @@ i {
 	width: 330px;
 	height: 35px;
 	padding-left: 20px;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .signup_input-name {
@@ -478,7 +448,7 @@ i {
 	margin: 40px 0 0 1px;
 	width: 149px;
 	height: 35px;
-	font-size: 14px;
+	font-size: 12px;
 	padding-left: 20px;
 }
 
@@ -487,7 +457,7 @@ i {
 	margin: 0 0 0 1px;
 	width: 149px;
 	height: 35px;
-	font-size: 14px;
+	font-size: 12px;
 	padding-left: 20px;
 }
 
@@ -496,7 +466,7 @@ i {
 	margin: 0 0 0 1px;
 	width: 149px;
 	height: 35px;
-	font-size: 14px;
+	font-size: 12px;
 	padding-left: 20px;
 }
 
@@ -555,6 +525,32 @@ i {
 	font-size: 16px;
 }
 
+/*USERS.html*/
+
+#users {
+	margin-top: 160px;
+}
+
+#users_container {
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}
+
+#users_hello {
+	font-size: 48px;
+	font-weight: 300;
+	margin: 0;
+}
+
+.users_p {
+	color: #222;
+	text-align: center;
+	font-weight: 300;
+	font-size: 16px;
+	margin: 30px;
+}
+
 /*SITE WIDE*/
 
 .black {
@@ -575,6 +571,12 @@ i {
 
 .thin {
 	font-weight: 300;
+}
+
+.block-center {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
 }
 
 /*Mobile & Tablet, 770px*/
@@ -674,6 +676,81 @@ i {
 	.wedding_show-a {
 		margin-top: 50px;
 	}
+
+	/*SIGN IN.html*/
+
+#signin {
+	margin-top: 100px;
+}
+
+.signin_input {
+	display: block;
+	margin: 40px auto;
+	width: 300px;
+	height: 35px;
+	font-size: 14px;
+	padding-left: 10px;
+}
+
+.signin_input-button {
+	width: 316px;
+	padding: 15px 0;
+	border: 0;
+	background: #222;
+	color: #fff;
+	font-size: 14px;
+}
+
+/*SIGN UP.html*/
+
+#signup {
+	margin-top: 100px;
+}
+
+.signup_input {
+	display: block;
+	margin: 40px auto;
+	width: 300px;
+	height: 35px;
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+.signup_input-name {
+	display: block;
+	margin: 40px auto 0;
+	width: 300px;
+	height: 35px;
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+.signup_input-name:nth-of-type(1) {
+	display: block;
+	margin: 40px auto;
+	width: 300px;
+	height: 35px;
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+.signup_input-name:nth-of-type(2) {
+	display: block;
+	margin: 40px auto 0;
+	width: 300px;
+	height: 35px;
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+.signup_input-button {
+	width: 316px;
+	padding: 15px 0;
+	border: 0;
+	background: #222;
+	color: #fff;
+	font-size: 14px;
+}
 
 	/*NAV BAR, mobile*/
 

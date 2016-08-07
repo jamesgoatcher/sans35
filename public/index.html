@@ -32,8 +32,9 @@
 					<ul id="menu_ul">
 						<li class="menu_li"><a href="/engagement" class="menu_a">Engagement</a></li>
 						<li class="menu_li"><a href="/wedding" class="menu_a">Wedding</a></li>
-						<li class="menu_li"><a href="/signin" class="menu_a">Sign In</a></li>
-						<li class="menu_li"><a href="/logout" class="menu_a">Log Out</a></li>
+						<li ng-show="noUser" class="menu_li"><a href="/signin" class="menu_a">Sign In</a></li>
+						<li ng-hide="noUser" class="menu_li"><a href="/users/{{index.user._id}}" class="menu_a">{{index.navEmail}}</a></li>
+						<li ng-hide="noUser" class="menu_li"><a href="/logout" class="menu_a">Log Out</a></li>
 					</ul>
 				</div>
 				<!-- Nav Bar, MOBILE -->
@@ -46,7 +47,9 @@
 						<li class="menu_li-m"><a href="/about" class="menu_a-m">About</a></li>
 						<li class="menu_li-m"><a href="/testimonial" class="menu_a-m">Testimonial</a></li>
 						<li class="menu_li-m"><a href="/contact" class="menu_a-m">Contact</a></li>
-						<li class="menu_li-m"><a href="/signin" class="menu_a-m">Sign In</a></li>
+						<li ng-show="noUser" class="menu_li-m"><a href="/signin" class="menu_a-m">Sign In</a></li>
+						<li ng-hide="noUser" class="menu_li-m"><a href="/users/{{index.user._id}}" class="menu_a-m">{{index.navEmail}}</a></li>
+						<li ng-hide="noUser" class="menu_li-m"><a href="/logout" class="menu_a-m">Log Out</a></li>
 						<li class="menu_li-m-glyph"><a href="https://www.facebook.com/sans35photography" class="menu_a-m" target="_blank"><i class="menu_li-m-i">&#xF308;</i></a></li>
 						<li class="menu_li-m-glyph"><a href="http://www.yelp.com/biz/sans-35-photography-los-angeles?osq=sans35" class="menu_a-m" target="_blank"><i class="menu_li-m-i">&#xE804;</i></a></li>
 						<li class="menu_li-m small"><a href="http://www.jamesgoatcher.com" class="menu_a-m" target="_blank">&copy;2016 JPG Web Design</a></li>

@@ -5,16 +5,20 @@
 			<h2 id="signup_hello">SIGN UP</h2>
 		</div> -->
 		<form id="signup_form" ng-submit="signup.signUp()">
-			<input class="signup_input-name" type="text" placeholder="FIRST NAME #1" ng-model="signup.form.firstNameOne">
-			<input class="signup_input-name" type="text" placeholder="LAST NAME #1" ng-model="signup.form.lastNameOne">
+			<input class="signup_input-name" type="text" placeholder="YOUR FIRST NAME" ng-model="signup.form.firstNameOne">
+			<input class="signup_input-name" type="text" placeholder="YOUR LAST NAME" ng-model="signup.form.lastNameOne">
 			<br>
-			<input class="signup_input-name" type="text" placeholder="FIRST NAME #2" ng-model="signup.form.firstNameTwo">
-			<input class="signup_input-name" type="text" placeholder="LAST NAME #2" ng-model="signup.form.lastNameTwo">
+			<input class="signup_input-name" type="text" placeholder="PARTNER'S FIRST NAME" ng-model="signup.form.firstNameTwo">
+			<input class="signup_input-name" type="text" placeholder="PARTNER'S LAST NAME" ng-model="signup.form.lastNameTwo">
 			<br>
 			<input class="signup_input" type="text" placeholder="EMAIL" ng-model="signup.form.email">
 			<input class="signup_input" type="password" placeholder="PASSWORD" ng-model="signup.form.password">
 			<input class="signup_input-button" type="submit" value="SIGN UP">
 		</form>
-		<p class="signup_p">ALREADY HAVE AN ACCOUNT?  <a class="signup_a" href="/signin">SIGN IN!</p></h3>
+		<p class="signup_p">ALREADY HAVE AN ACCOUNT?  <a class="signup_a" href="/signin">SIGN IN!</a></p></h3>
+		<!--  USERNAME TAKEN MESSAGE -->
+		<div class="block-center" ng-show="badEmail">
+			<p class="signup_p red"><u>EMAIL ADDRESS ALREADY REGISTERED.  PLEASE <a class="signup_a black" href="/password">RECOVER YOUR PASSWORD</a>.</u></p>
+		</div>
 	</div>
 </section>

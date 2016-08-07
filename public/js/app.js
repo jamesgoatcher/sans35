@@ -45,9 +45,36 @@ var app = angular.module('Sans35App', ['ngRoute']);
 
 	}]);
 
-//INDEX - Controller
+//INDEX - Controller (PARENT)
 	app.controller('Index', ['$http', '$scope', function($http, $scope) {
 		console.log('index controller works');
+
+		var index = this;
+
+		//Nav bar signin/logout control.  True = No User | False = User
+		$scope.noUser = true;
+
+		//Admin is set to false by default and can't be added through GUI.
+		//True = Active | False = Inactive
+		$scope.admin  = false;
+
+		//Transmits logged in user info to parent
+		$scope.$on('getUser', function(event, data){ 
+			index.user = data.userLogged;
+			$scope.user = index.user;
+		
+			if ($scope.user.email !== undefined) { //nav bar links, w/o final suffix = bad PW return user profile
+				index.navEmail = index.user.email;
+				index.navLink = '/users/{{index.user._id}}';
+				$scope.noUser = false;
+			};
+
+			//Admin Control.
+			if ($scope.user.admin === true) {
+				$scope.admin = true;
+			};
+		});
+
 	}]);
 
 //HOME - Controller
@@ -85,7 +112,7 @@ app.controller('EngagementShowCtrl', ['$http', '$scope', '$routeParams', functio
 app.controller('SignUp', ['$http', '$scope', '$location', '$window', function($http, $scope, $location, $window) {
 
 	console.log('sign up page');
-	$scope.badPassword = false;
+	$scope.badEmail = false;
 
 	this.signUp = function() {
 		$http ({
@@ -102,7 +129,7 @@ app.controller('SignUp', ['$http', '$scope', '$location', '$window', function($h
 				$location.url('/users/'+userLogged._id);
 			} else {
 				console.log('Email already taken')
-				$scope.badPassword = true;
+				$scope.badEmail = true;
 			}
 		});
 	}

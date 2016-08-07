@@ -9,7 +9,11 @@
 			<input class="signin_input" type="password" placeholder="PASSWORD" ng-model="signin.form.password">
 			<input class="signin_input-button" type="submit" value="SIGN IN">
 		</form>
-		<p class="signin_p">DON'T HAVE AN ACCOUNT?  <a class="signin_a" href="/signup">CREATE ONE!</p></h3>
+		<p class="signin_p">DON'T HAVE AN ACCOUNT?  <a class="signin_a" href="/signup">CREATE ONE!</a></p></h3>
 		<p class="signin_p"><a class="signin_a" href="/password">FORGOT YOUR PASSWORD?</a></p>
+		<!--  BAD PASSWORD MESSAGE -->
+		<div class="block-center" ng-show="badPassword">
+			<p class="signin_p red"><u>INCORRECT PASSWORD.</u></p>
+		</div>
 	</div>
 </section>

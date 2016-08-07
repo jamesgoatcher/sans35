@@ -43,4 +43,18 @@ router.post('/logout', function(req, res) {
 	})
 });
 
+//ADMIN route
+// router.get('/:id', function(req, res) {
+// 	User.find({}, function(err, users) {
+// 		var userMap = {};
+
+// 		users.forEach(function(userall) {
+// 			userMap[userall.email] = userall;
+// 		});
+
+// 		res.send(userMap);
+// 	});
+// });
+
+
 module.exports 	= router;
