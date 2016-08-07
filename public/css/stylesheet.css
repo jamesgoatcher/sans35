@@ -371,7 +371,7 @@ i {
 	text-align: center;
 }
 
-#signin_button {
+/*#signin_button {
 	width: 250px;
 	height: 70px;
 	background: #222;
@@ -385,7 +385,7 @@ i {
 	font-weight: 300;
 	font-size: 48px;
 	padding-top: 2px;
-}
+}*/
 
 #signin_form {
 	display: block;
@@ -442,7 +442,7 @@ i {
 	text-align: center;
 }
 
-#signup_button {
+/*#signup_button {
 	width: 250px;
 	height: 70px;
 	background: #222;
@@ -456,7 +456,7 @@ i {
 	font-weight: 300;
 	font-size: 48px;
 	padding-top: 2px;
-}
+}*/
 
 #signup_form {
 	display: block;
@@ -532,6 +532,7 @@ i {
 	color: #fff;
 	padding: 10px 20px;
 	margin-top: 20px;
+	font-size: 16px;
 }
 
 /*SITE WIDE*/
