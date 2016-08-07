@@ -59,6 +59,7 @@ body {
 	padding: 0 0 5px;
 	font-size: 12px;
 	text-align: center;
+	margin: 0 7px 0 0;
 }
 
 .menu_li {
@@ -505,6 +506,32 @@ i {
 
 .signup_a:hover {
 	color: #222;
+}
+
+/*LOG OUT*/
+
+#logout{
+	margin-top: 160px;
+}
+
+#logout_container {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 700px;
+}
+
+#logout_hello {
+	font-size: 48px;
+	font-weight: 300;
+	margin: 0;
+}
+
+#logout_button {
+	background: #222;
+	color: #fff;
+	padding: 10px 20px;
+	margin-top: 20px;
 }
 
 /*SITE WIDE*/

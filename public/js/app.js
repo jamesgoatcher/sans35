@@ -6,7 +6,7 @@ var app = angular.module('Sans35App', ['ngRoute']);
 
 		$routeProvider.when('/', {
 			templateUrl: 'partials/home.html',
-			controller: 'HomeCtrl'
+			controller: 'HomeCtrl',
 		}).when('/about', {
 			templateUrl: 'partials/about.html'
 		}).when('/testimonial', {
@@ -37,6 +37,10 @@ var app = angular.module('Sans35App', ['ngRoute']);
 			templateUrl: 'partials/engagement/show.html',
 			controller: 'EngagementShowCtrl',
 				controllerAs: 'engagementshow'
+		}).when('/logout', {
+			templateUrl: 'partials/logout.html',
+			controller: 'LogOut',
+				controllerAs: 'logout'
 		});
 
 	}]);
@@ -78,7 +82,7 @@ app.controller('EngagementShowCtrl', ['$http', '$scope', '$routeParams', functio
 }]);
 
 //SIGN UP - Controller
-app.controller('SignUp', ['$http', '$scope', '$location', '$window', function($http, $scope, $location, $window){
+app.controller('SignUp', ['$http', '$scope', '$location', '$window', function($http, $scope, $location, $window) {
 
 	console.log('sign up page');
 	$scope.badPassword = false;
@@ -90,7 +94,6 @@ app.controller('SignUp', ['$http', '$scope', '$location', '$window', function($h
 			data:   this.form
 		}).then(function(result){
 			if(result.data !== ''){
-				console.log(result.data);
 				userLogged = result.data;
 				$scope.$emit('getUser', {
 					userLogged: userLogged
@@ -98,7 +101,7 @@ app.controller('SignUp', ['$http', '$scope', '$location', '$window', function($h
 				console.log('Sign Up successful')
 				$location.url('/users/'+userLogged._id);
 			} else {
-				console.log('Name already taken')
+				console.log('Email already taken')
 				$scope.badPassword = true;
 			}
 		});
@@ -107,9 +110,53 @@ app.controller('SignUp', ['$http', '$scope', '$location', '$window', function($h
 }]);
 
 //SIGN IN - Controller
+app.controller('SignIn', ['$http', '$scope', '$location', '$route', function($http, $scope, $location, $route) {
 
+	console.log('sign in page');
 
+	$scope.badPassword = false;
 
+	this.signIn = function() {
+		$http ({
+			method: 'POST',
+			url:    '/users/login',
+			data:   this.form
+		}).then(function(result){
+			if (result.data !== 'password incorrect'){
+				userLogged = result.data;
+				$scope.$emit('getUser', {
+					userLogged: userLogged
+				});
+				console.log('sign in successful');
+				$location.url('/users/'+userLogged._id);
+			} else {
+				console.log('incorrect password')
+				$scope.badPassword = true;
+			}
+		});
+	}
 
+}]);
+
+//LOG OUT - Controller
+app.controller('LogOut', ['$http', '$scope', '$location', '$route', function($http, $scope, $location, $route) {
+
+	this.logOut = function() {
+		$http ({
+			method: 'POST',
+			url:    '/users/logout',
+			data:   this.form
+		}).then(function(result){
+			userLogged = null;
+			$scope.$emit('getUser', {
+				userLogged: userLogged
+			});
+			$scope.$parent.noUser = true;
+			console.log('logged out');
+			location.reload();
+		});
+	}
+
+}]);
 
 
