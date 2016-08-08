@@ -341,6 +341,7 @@ i {
 .wedding_show-div {
 	white-space: nowrap;
 	margin-top: 151px;
+	max-width: 66em;
 }
 
 .wedding_show-img {
