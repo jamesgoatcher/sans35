@@ -700,6 +700,7 @@ i {
 
 	.wedding_show-div {
 		max-width: 770px;
+		margin-top: 110px;
 	}
 
 	.wedding_show-img {
@@ -707,11 +708,20 @@ i {
 	}
 
 	.wedding_show-a {
-		margin-top: 50px;
+		margin-top: 40px;
 	}
 
 	.engagement_show-div {
 		max-width: 770px;
+		margin-top: 110px;
+	}
+
+	.engagement_show-img {
+		height: 500px;
+	}
+
+	.engagement_show-a {
+		margin-top: 40px;
 	}
 
 	#signin {
@@ -946,7 +956,8 @@ i {
 	}
 
 	.wedding_show-div {
-		max-width: 414px;
+		max-width: 670px;
+		margin-top: 100px;
 	}
 
 	.wedding_show-img {
@@ -954,7 +965,12 @@ i {
 	}
 
 	.engagement_show-div {
-		max-width: 414px;
+		max-width: 670px;
+		margin-top: 100px;
+	}
+
+	.engagement_show-img {
+		height: 320px;
 	}
 
 	/*NAV BAR, mobile*/
