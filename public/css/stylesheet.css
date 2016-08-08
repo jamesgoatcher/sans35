@@ -580,6 +580,20 @@ i {
 	margin: 30px;
 }
 
+.album_div {
+	background: #eee;
+	width: 220px;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.album_img-thumb {
+	width: 200px;
+	display: inline-block;
+	margin: 0 10px;
+}
+
 /*SITE WIDE*/
 
 .black {

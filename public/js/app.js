@@ -49,14 +49,17 @@ var app = angular.module('Sans35App', ['ngRoute']);
 	app.controller('Index', ['$http', '$scope', '$location', '$anchorScroll', function($http, $scope, $anchorScroll) {
 		console.log('index controller works');
 
-		var index = this;
+		var index      = this;
 
 		//Nav bar signin/logout control.  True = No User | False = User
-		$scope.noUser = true;
+		$scope.noUser  = true;
+
+		//User page album div.  True = Album | False = No Album
+		$scope.noAlbum = false;
 
 		//Admin is set to false by default and can't be added through GUI.
 		//True = Active | False = Inactive
-		$scope.admin  = false;
+		$scope.admin   = false;
 
 		//Transmits logged in user info to parent
 		$scope.$on('getUser', function(event, data){ 
@@ -67,6 +70,11 @@ var app = angular.module('Sans35App', ['ngRoute']);
 				index.navEmail = index.user.email;
 				index.navLink = '/users/{{index.user._id}}';
 				$scope.noUser = false;
+			};
+
+			//Album?
+			if ($scope.user.album.length >= 1) {
+				$scope.noAlbum = true;
 			};
 
 			//Admin Control.
