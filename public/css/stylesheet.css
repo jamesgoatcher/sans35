@@ -613,7 +613,7 @@ i {
 		top: 0;
 		left: 0;
 		z-index: 100;
-		padding-bottom: 40px;
+		padding-bottom: 30px;
 		background: rgba(255,255,255,1);
 	}
 
@@ -830,7 +830,7 @@ i {
 
 	.menu_li-m {
 		display: block;
-		padding: 20px 0;
+		padding: 15px 0;
 	}
 
 	.menu_a-m {
@@ -864,7 +864,7 @@ i {
 		top: 0;
 		left: 0;
 		z-index: 100;
-		padding-bottom: 40px;
+		padding-bottom: 30px;
 		background: rgba(255,255,255,1);
 	}
 
@@ -895,6 +895,10 @@ i {
 
 	#about_h3 {
 		margin: 0 0 10px 0;
+	}
+
+	#testimonial_hello {
+		margin: 100px auto 65px;
 	}
 
 	#engagement {
@@ -971,7 +975,7 @@ i {
 
 	.menu_nav_container-m-active {
 		display: block;
-		padding: 0 0 400px;
+		padding: 0 0 1000px;
 		margin: 30px 0 0;
 		background: rgba(255,255,255,.5);
 	}
@@ -986,7 +990,7 @@ i {
 
 	.menu_li-m {
 		display: block;
-		padding: 15px 0;
+		padding: 10px 0;
 	}
 
 	.menu_a-m {
