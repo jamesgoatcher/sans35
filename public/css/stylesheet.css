@@ -361,6 +361,31 @@ i {
 	color: #aaa;
 }
 
+/*ENGAGEMENT - SHOW*/
+
+.engagement_show-div {
+	white-space: nowrap;
+	margin-top: 151px;
+}
+
+.engagement_show-img {
+	display: inline;
+	height: 650px;
+}
+
+.engagement_show-a {
+	position: fixed;
+	margin-top: 10px;
+	display: block;
+	text-decoration: none;
+	color: #222;
+	font-weight: 300;
+}
+
+.engagement_show-a:hover {
+	color: #aaa;
+}
+
 /*SIGN IN.html*/
 
 #signin {
