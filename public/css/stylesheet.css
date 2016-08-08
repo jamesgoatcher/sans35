@@ -585,13 +585,52 @@ i {
 	width: 220px;
 	display: block;
 	margin: 0 auto;
-	padding-bottom: 20px;
+	padding: 20px;
+}
+
+.album_img-div {
+	max-width: 220px;
+	max-height: 220px;
+	display: inline-block;
+	overflow: hidden;
 }
 
 .album_img-thumb {
-	width: 200px;
+	width: 260px;
+	position: relative;
+	right: 20px;
+}
+
+#admin {
 	display: inline-block;
-	margin: 0 10px;
+	margin: 10px;
+}
+
+#admin_clients {
+	font-size: 16px;
+	width: 200px;
+	border-width: 0;
+	background: #222;
+	color: #fff;
+}
+
+#admin_form {
+	margin-top: 30px;
+}
+
+#admin_input {
+	display: block;
+	margin: 0 auto 30px;
+}
+
+#admin_input-submit {
+	display: block;
+	margin: 0 auto;
+	background: #222;
+	border: 0;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 20px;
 }
 
 /*SITE WIDE*/
@@ -813,6 +852,10 @@ i {
 		margin-top: 100px;
 	}
 
+	#users_hello {
+		font-size: 32px;
+	}
+
 	/*NAV BAR, mobile*/
 
 	#test {
@@ -985,6 +1028,10 @@ i {
 
 	.engagement_show-img {
 		height: 320px;
+	}
+
+	#users_hello {
+		font-size: 28px;
 	}
 
 	/*NAV BAR, mobile*/

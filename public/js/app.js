@@ -5,30 +5,32 @@ var app = angular.module('Sans35App', ['ngRoute']);
 		$locationProvider.html5Mode({ enabled:true });
 
 		$routeProvider.when('/', {
-			templateUrl: 'partials/home.html',
+			templateUrl: 'partials/static/home.html',
 			controller: 'HomeCtrl',
 		}).when('/about', {
-			templateUrl: 'partials/about.html'
+			templateUrl: 'partials/static/about.html'
 		}).when('/testimonial', {
-			templateUrl: 'partials/testimonial.html'
+			templateUrl: 'partials/static/testimonial.html'
 		}).when('/contact', {
-			templateUrl: 'partials/contact.html'
+			templateUrl: 'partials/static/contact.html'
 		}).when('/engagement', {
-			templateUrl: 'partials/engagement.html'
+			templateUrl: 'partials/engagement/engagement.html'
 		}).when('/wedding', {
-			templateUrl: 'partials/wedding.html'
+			templateUrl: 'partials/wedding/wedding.html'
 		}).when('/signin', {
-			templateUrl: 'partials/signin.html',
+			templateUrl: 'partials/user/signin.html',
 			controller: 'SignIn',
 				controllerAs: 'signin'
 		}).when('/signup', {
-			templateUrl: 'partials/signup.html',
+			templateUrl: 'partials/user/signup.html',
 			controller: 'SignUp',
 				controllerAs: 'signup'
 		}).when('/users/:id', {
-			templateUrl: 'partials/users.html'
+			templateUrl: 'partials/user/users.html'
+		}).when('/album/:id', {
+			templateUrl: 'partials/user/album.html'
 		}).when('/password', {
-			templateUrl: 'partials/password.html'
+			templateUrl: 'partials/user/password.html'
 		}).when('/wedding/:id', {
 			templateUrl: 'partials/wedding/show.html',
 			controller: 'WeddingShowCtrl',
@@ -38,7 +40,7 @@ var app = angular.module('Sans35App', ['ngRoute']);
 			controller: 'EngagementShowCtrl',
 				controllerAs: 'engagementshow'
 		}).when('/logout', {
-			templateUrl: 'partials/logout.html',
+			templateUrl: 'partials/user/logout.html',
 			controller: 'LogOut',
 				controllerAs: 'logout'
 		});
