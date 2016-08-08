@@ -46,7 +46,7 @@ var app = angular.module('Sans35App', ['ngRoute']);
 	}]);
 
 //INDEX - Controller (PARENT)
-	app.controller('Index', ['$http', '$scope', function($http, $scope) {
+	app.controller('Index', ['$http', '$scope', '$location', '$anchorScroll', function($http, $scope, $anchorScroll) {
 		console.log('index controller works');
 
 		var index = this;
@@ -83,7 +83,7 @@ var app = angular.module('Sans35App', ['ngRoute']);
 	}]);
 
 //WEDDING, SHOW - Controller
-app.controller('WeddingShowCtrl', ['$http', '$scope', '$routeParams', function($http, $scope, $routeParams) {
+app.controller('WeddingShowCtrl', ['$http', '$scope', '$routeParams', '$anchorScroll', function($http, $scope, $routeParams, $anchorScroll) {
 
 	console.log('wedding show page');
 	var show = this;
@@ -96,7 +96,7 @@ app.controller('WeddingShowCtrl', ['$http', '$scope', '$routeParams', function($
 }]);
 
 //ENGAGEMENT, SHOW - Controller
-app.controller('EngagementShowCtrl', ['$http', '$scope', '$routeParams', function($http, $scope, $routeParams) {
+app.controller('EngagementShowCtrl', ['$http', '$scope', '$routeParams', '$anchorScroll', function($http, $scope, $routeParams, $anchorScroll) {
 
 	console.log('engagement show page');
 	var show = this;
@@ -109,7 +109,7 @@ app.controller('EngagementShowCtrl', ['$http', '$scope', '$routeParams', functio
 }]);
 
 //SIGN UP - Controller
-app.controller('SignUp', ['$http', '$scope', '$location', '$window', function($http, $scope, $location, $window) {
+app.controller('SignUp', ['$http', '$scope', '$location', '$window', '$anchorScroll', function($http, $scope, $location, $window, $anchorScroll) {
 
 	console.log('sign up page');
 	$scope.badEmail = false;
@@ -137,7 +137,7 @@ app.controller('SignUp', ['$http', '$scope', '$location', '$window', function($h
 }]);
 
 //SIGN IN - Controller
-app.controller('SignIn', ['$http', '$scope', '$location', '$route', function($http, $scope, $location, $route) {
+app.controller('SignIn', ['$http', '$scope', '$location', '$route', '$anchorScroll', function($http, $scope, $location, $route, $anchorScroll) {
 
 	console.log('sign in page');
 
@@ -166,7 +166,7 @@ app.controller('SignIn', ['$http', '$scope', '$location', '$route', function($ht
 }]);
 
 //LOG OUT - Controller
-app.controller('LogOut', ['$http', '$scope', '$location', '$route', function($http, $scope, $location, $route) {
+app.controller('LogOut', ['$http', '$scope', '$location', '$route', '$anchorScroll', function($http, $scope, $location, $route, $anchorScroll) {
 
 	this.logOut = function() {
 		$http ({
