@@ -341,7 +341,8 @@ i {
 .wedding_show-div {
 	white-space: nowrap;
 	margin-top: 151px;
-	max-width: 66em;
+	overflow-x: auto;
+	overflow-y: hidden;
 }
 
 .wedding_show-img {
@@ -367,6 +368,8 @@ i {
 .engagement_show-div {
 	white-space: nowrap;
 	margin-top: 151px;
+	overflow-x: auto;
+	overflow-y: hidden;
 }
 
 .engagement_show-img {
@@ -695,12 +698,20 @@ i {
 		width: 200px;
 	}
 
+	.wedding_show-div {
+		max-width: 770px;
+	}
+
 	.wedding_show-img {
 		height: 500px;
 	}
 
 	.wedding_show-a {
 		margin-top: 50px;
+	}
+
+	.engagement_show-div {
+		max-width: 770px;
 	}
 
 	#signin {
@@ -724,8 +735,6 @@ i {
 		color: #fff;
 		font-size: 14px;
 	}
-
-
 
 	#signup {
 		margin-top: 100px;
@@ -936,8 +945,16 @@ i {
 		width: 200px;
 	}
 
+	.wedding_show-div {
+		max-width: 414px;
+	}
+
 	.wedding_show-img {
 		height: 320px;
+	}
+
+	.engagement_show-div {
+		max-width: 414px;
 	}
 
 	/*NAV BAR, mobile*/
