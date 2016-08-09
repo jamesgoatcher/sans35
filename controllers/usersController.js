@@ -56,10 +56,21 @@ router.post('/logout', function(req, res) {
 // 	});
 // });
 
-
-
-
-
-
+//ADMIN control to update User album
+router.post('/update/:id', 
+	function(req, res, next){   
+		User.findOneAndUpdate( { _id: req.params.id } , {     
+			$push: {       
+			   album: req.body
+			}     
+		},   
+		function(err, client) {     
+			if (err) { 
+				console.log(err);    
+			} else {      
+				console.log('updated user album');    
+			}   
+		}); 
+	});
 
 module.exports 	= router;

@@ -26,7 +26,9 @@ var app = angular.module('Sans35App', ['ngRoute']);
 			controller: 'SignUp',
 				controllerAs: 'signup'
 		}).when('/users/:id', {
-			templateUrl: 'partials/user/users.html'
+			templateUrl: 'partials/user/users.html',
+			controller: 'UserCtrl',
+				controllerAs: 'user'
 		}).when('/users/:id/album', {
 			templateUrl: 'partials/user/album.html'
 		}).when('/password', {
@@ -115,6 +117,32 @@ app.controller('EngagementShowCtrl', ['$http', '$scope', '$routeParams', '$ancho
 	var params = $routeParams.id
 
 	$scope.couple = params;
+
+}]);
+
+//USER - Controller
+app.controller('UserCtrl', ['$http', '$scope', '$routeParams', function($http, $scope, $routeParams) {
+
+	console.log('user page');
+
+	$http ({
+		method: 'GET',
+		url:    '/users'
+	}).success(function(data) {
+		$scope.clientList = data.users;
+	}).error(function(data) {
+		console.log('Error: ' + data);
+	});
+
+	$scope.editClient = function(client) {
+		$http.post('/users/update' + user._id, client)
+		.success(function(data) {
+			$scope.clientList = data;
+			console.log(data);
+		}).error(function(data) {
+			console.log('Error: ' + data);
+		});
+	};
 
 }]);
 
