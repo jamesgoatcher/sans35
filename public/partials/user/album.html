@@ -2,7 +2,7 @@
 <section id="album_page">
 	<div id="album_page_container">
 
-		<img id="album_page_large-img" src="">
+			<img id="album_page_large-img" src="">
 
 		<div class="album_page_div">
 			<div
@@ -17,14 +17,14 @@
 <script>
 	//Album show page thumbnail to large image
 $(document).ready(function() {
-	$('.album_page_thumb').click(function() {
-		console.log('clicked hide');
+	$('.album_page_thumb').click(function(x) {
 		$('.album_page_div').hide();
 		var src = $(this).attr('src');
 		$('#album_page_large-img').attr('src', src).show();
+		$('body').toggleClass('black-bg');
+		x.stopPropagation();
 	});
 	$('#album_page_large-img').hide().click(function(){
-		console.log('clicked show');
 		$(this).hide();
 		$('.album_page_div').show();
 	});

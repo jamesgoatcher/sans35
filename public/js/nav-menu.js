@@ -20,17 +20,9 @@ $(document).ready(function(){
 		$('.menu_nav_container-m').toggleClass('menu_nav_container-m-active');
 	});
 
-	//Album show page thumbnail to large image
-	$('.album_page_thumb').click(function() {
-		console.log('clicked hide');
-		$('.album_page_div').hide();
-		var src = $(this).attr('src');
-		$('#album_page_large-img').attr('src', src).show();
-	});
-	$('#album_page_large-img').hide().click(function(){
-		console.log('clicked show');
-		$(this).hide();
-		$('.album_page_div').show();
+	//Removes black BG from body if click anywhere
+	$(document).click(function() {
+		$('body').removeClass('black-bg');
 	});
 
 });

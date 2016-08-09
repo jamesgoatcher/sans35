@@ -645,7 +645,9 @@ i {
 }
 
 #album_page_large-img {
-	width: 720px;
+	height: 580px;
+	border: 2px solid #fff;
+	cursor: pointer;
 }
 
 .album_page_div {
@@ -675,6 +677,10 @@ i {
 
 .red {
 	color: #993333;
+}
+
+.black-bg {
+	background: #222;
 }
 
 .wide {
@@ -1074,6 +1080,21 @@ i {
 
 	#users_hello {
 		font-size: 28px;
+	}
+
+	.album_page_repeat {
+		max-width: 150px;
+		max-height: 150px;
+		margin: 5px;	
+	}
+
+	.album_page_thumb {
+		width: 250px;
+		right: 50px;
+	}
+
+	#album_page_large-img {
+		height: 400px;
 	}
 
 	/*NAV BAR, mobile*/
