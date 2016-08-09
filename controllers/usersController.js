@@ -43,7 +43,7 @@ router.post('/logout', function(req, res) {
 	})
 });
 
-//ADMIN route
+// //ADMIN route
 // router.get('/:id', function(req, res) {
 // 	User.find({}, function(err, users) {
 // 		var userMap = {};
@@ -55,6 +55,10 @@ router.post('/logout', function(req, res) {
 // 		res.send(userMap);
 // 	});
 // });
+
+
+
+
 
 
 

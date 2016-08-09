@@ -27,7 +27,7 @@ var app = angular.module('Sans35App', ['ngRoute']);
 				controllerAs: 'signup'
 		}).when('/users/:id', {
 			templateUrl: 'partials/user/users.html'
-		}).when('/album/:id', {
+		}).when('/users/:id/album', {
 			templateUrl: 'partials/user/album.html'
 		}).when('/password', {
 			templateUrl: 'partials/user/password.html'

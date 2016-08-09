@@ -596,9 +596,9 @@ i {
 }
 
 .album_img-thumb {
-	width: 260px;
+	width: 340px;
 	position: relative;
-	right: 20px;
+	right: 60px;
 }
 
 #admin {
@@ -631,6 +631,40 @@ i {
 	color: #fff;
 	font-size: 16px;
 	padding: 10px 20px;
+}
+
+#album_page {
+	margin-top: 160px;
+}
+
+#album_page_container {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 720px;
+}
+
+#album_page_large-img {
+	width: 720px;
+}
+
+.album_page_div {
+	display: inline-block;
+}
+
+.album_page_repeat {
+	max-width: 220px;
+	max-height: 220px;
+	display: inline-block;
+	overflow: hidden;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.album_page_thumb {
+	width: 340px;
+	position: relative;
+	right: 60px;
 }
 
 /*SITE WIDE*/
@@ -852,8 +886,16 @@ i {
 		margin-top: 100px;
 	}
 
+	#users {
+		margin-top: 100px;
+	}
+
 	#users_hello {
 		font-size: 32px;
+	}
+
+	#album_page {
+		margin-top: 100px;
 	}
 
 	/*NAV BAR, mobile*/
