@@ -47,4 +47,13 @@ figure {
     width: 100%;
   }
 
+  .gallery .item {
+    height: 520px;
+  }
 
+/*Mobile & Tablet, 470px*/
+@media (max-width: 470px) {
+
+  .gallery .item {
+    height: 320px;
+  }
