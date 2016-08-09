@@ -5,7 +5,7 @@
 			<h2 id="signin_hello">SIGN IN</h2>
 		</div> -->
 		<form id="signin_form" ng-submit="signin.signIn()">
-			<input class="signin_input" type="text" placeholder="EMAIL" ng-model="signin.form.email">
+			<input class="signin_input" type="text" placeholder="EMAIL" onkeyup="return toLowercase(this);" ng-model="signin.form.email">
 			<input class="signin_input" type="password" placeholder="PASSWORD" ng-model="signin.form.password">
 			<input class="signin_input-button" type="submit" value="SIGN IN">
 		</form>
@@ -17,3 +17,8 @@
 		</div>
 	</div>
 </section>
+<script>
+	function toLowercase(email) {
+		email.value = email.value.toLowerCase();
+	};
+</script>

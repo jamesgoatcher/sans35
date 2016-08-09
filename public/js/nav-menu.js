@@ -20,9 +20,9 @@ $(document).ready(function(){
 		$('.menu_nav_container-m').toggleClass('menu_nav_container-m-active');
 	});
 
-	//Removes black BG from body if click anywhere
-	$(document).click(function() {
-		$('body').removeClass('black-bg');
-	});
+	// //Removes black BG from body if click anywhere
+	// $(document).click(function() {
+	// 	$('body').removeClass('black-bg');
+	// });
 
 });
