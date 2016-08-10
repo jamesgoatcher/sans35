@@ -43,25 +43,25 @@ router.post('/logout', function(req, res) {
 	})
 });
 
-// //ADMIN route
-// router.get('/:id', function(req, res) {
-// 	User.find({}, function(err, users) {
-// 		var userMap = {};
-
-// 		users.forEach(function(userall) {
-// 			userMap[userall.email] = userall;
-// 		});
-
-// 		res.send(userMap);
-// 	});
-// });
+//ADMIN route
+router.get('/:id', function(req, res) {
+	User.find({}, function(err, users) {
+		if(!err) {
+			res.send(users)
+		} else {
+			res.send('error retrieving data')
+		}
+	});
+});
 
 //ADMIN control to update User album
 router.post('/update/:id', 
 	function(req, res, next){   
+		console.log(req.params);
+		console.log(req.body.url);
 		User.findOneAndUpdate( { _id: req.params.id } , {     
 			$push: {       
-			   album: req.body
+			   album: req.body.url
 			}     
 		},   
 		function(err, client) {     

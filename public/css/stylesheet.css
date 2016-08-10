@@ -355,7 +355,8 @@ i {
 
 .wedding_show-a {
 	position: fixed;
-	margin-top: 10px;
+	top: 130px;
+	left: 0;
 	display: block;
 	text-decoration: none;
 	color: #222;
@@ -382,7 +383,8 @@ i {
 
 .engagement_show-a {
 	position: fixed;
-	margin-top: 10px;
+	top: 130px;
+	left: 0;
 	display: block;
 	text-decoration: none;
 	color: #222;
@@ -612,9 +614,8 @@ i {
 #admin_clients {
 	font-size: 16px;
 	width: 200px;
-	border-width: 0;
-	background: #222;
-	color: #fff;
+	display: block;
+	margin: 0 auto;
 }
 
 #admin_form {
@@ -623,7 +624,8 @@ i {
 
 #admin_input {
 	display: block;
-	margin: 0 auto 30px;
+	margin: 30px auto 30px;
+	width: 300px;
 }
 
 #admin_input-submit {
@@ -644,7 +646,7 @@ i {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
-	max-width: 720px;
+	max-width: 960px;
 }
 
 #album_page_large {
@@ -659,6 +661,7 @@ i {
 
 .album_page_div {
 	display: inline-block;
+	margin-bottom: 80px;
 }
 
 .album_page_repeat {
@@ -674,6 +677,23 @@ i {
 	width: 340px;
 	position: relative;
 	right: 60px;
+}
+
+#password {
+	margin-top: 160px;
+}
+
+.password_hello {
+	font-weight: 300;
+	display: block;
+	margin: 1em auto;
+	text-align: center;
+	color: #222;
+}
+
+.password_a {
+	color: #aaa;
+	text-decoration: none;
 }
 
 /*SITE WIDE*/
@@ -819,7 +839,7 @@ i {
 	}
 
 	.wedding_show-a {
-		margin-top: 40px;
+		top: 90px;
 	}
 
 	.engagement_show-div {
@@ -832,7 +852,7 @@ i {
 	}
 
 	.engagement_show-a {
-		margin-top: 40px;
+		top: 90px;
 	}
 
 	#signin {
@@ -919,6 +939,10 @@ i {
 	}
 
 	#album_page {
+		margin-top: 100px;
+	}
+
+	#password {
 		margin-top: 100px;
 	}
 
@@ -1038,8 +1062,13 @@ i {
 		margin: 10px 0;
 	}
 
+	.about_img_size {
+		width: 130px;
+	}
+
 	#about_h3 {
 		margin: 0 0 10px 0;
+		font-size: 16px;
 	}
 
 	#testimonial_hello {
@@ -1059,7 +1088,7 @@ i {
 	}
 
 	.engagement_img {
-		width: 180px;
+		width: 160px;
 	}
 
 	#wedding {
@@ -1075,12 +1104,16 @@ i {
 	}
 
 	.wedding_img {
-		width: 180px;
+		width: 160px;
 	}
 
 	.wedding_show-div {
 		max-width: 670px;
 		margin-top: 100px;
+	}
+
+	.wedding_show-a {
+		top: 80px;
 	}
 
 	.wedding_show-img {
@@ -1094,6 +1127,10 @@ i {
 
 	.engagement_show-img {
 		height: 320px;
+	}
+
+	.engagement_show-a {
+		top: 80px;
 	}
 
 	#users_hello {

@@ -23,16 +23,11 @@
 			<p class="users_p red"><strong>ADMIN CONTROLS</strong></p>
 			<p class="users_p">To add album, start by selecting a client:</p>
 			<form id="admin_form">
-				<!-- <textarea id="admin_input" rows="20" cols="50" placeholder="Paste individual photo URLs here"></textarea> -->
-<!-- 				<select id="admin_clients" ng-repeat="client in clientList">
-					<option value="{{client._id}}">{{client.email}}</option>
-				</select> -->
-				<select id="admin_clients">
-					<option selected value="base">TEST</option>
+				<select id="admin_clients" ng-model="client._id" ng-options="client.email for client in clientList">
+					<option value="">-- choose client --</option>
 				</select>
-				<input type="hidden" value="{{client._id}}" name="client[id]">
-				<input type="text" name="client[id]">
-				<input id="admin_input-submit" ng-click="editClient(client)" type="submit">
+				<textarea id="admin_input" rows="20" cols="50" placeholder="Paste individual photo URLs here" ng-model="client.url"></textarea>
+				<input id="admin_input-submit"  type="submit" ng-click="editClient(client._id, client.url)">
 			</form>
 			<p class="users_p red">NOTE: Separate each URL with a return.</p>
 		</div>

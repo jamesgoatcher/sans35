@@ -127,15 +127,21 @@ app.controller('UserCtrl', ['$http', '$scope', '$routeParams', function($http, $
 
 	$http ({
 		method: 'GET',
-		url:    '/users'
+		url:    '/users/:id'
 	}).success(function(data) {
-		$scope.clientList = data.users;
+		$scope.clientList = data;
 	}).error(function(data) {
 		console.log('Error: ' + data);
 	});
 
-	$scope.editClient = function(client) {
-		$http.post('/users/update' + user._id, client)
+	$scope.url = 'temp';
+
+	$scope.editClient = function(client, url) {
+		var clientInfo = {};
+		clientInfo.id = client;
+		clientInfo.url = url;
+		console.log(url)
+		$http.post('/users/update/' + client._id, clientInfo)
 		.success(function(data) {
 			$scope.clientList = data;
 			console.log(data);
