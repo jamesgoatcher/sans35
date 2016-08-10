@@ -149,6 +149,7 @@ app.controller('UserCtrl', ['$http', '$scope', '$routeParams', function($http, $
 		}).error(function(data) {
 			console.log('Error: ' + data);
 		});
+		$scope.client.url = '';
 	};
 
 }]);
