@@ -46,7 +46,6 @@ router.post('/logout', function(req, res) {
 //ADMIN route
 router.get('/:id', function(req, res) {
 	User.find({}, function(err, users) {
-		console.log(req.params);
 		if(!err) {
 			res.send(users)
 		} else {

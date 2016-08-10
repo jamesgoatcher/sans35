@@ -21,7 +21,7 @@
 		<!-- ADMIN CONTROLS -->
 		<div ng-show="admin" id="admin">
 			<p class="users_p red"><strong>ADMIN CONTROLS</strong></p>
-			<p class="users_p">To add album, start by selecting a client:</p>
+			<p class="users_p">Select a client and paste image URLs to add album:</p>
 			<form id="admin_form">
 				<select id="admin_clients" ng-model="client._id" ng-options="client.email for client in clientList | orderBy: 'email'">
 					<option value="">--- SELECT CLIENT ---</option>
@@ -29,7 +29,8 @@
 				<textarea id="admin_input" rows="20" cols="60" placeholder="Paste individual photo URLs here" ng-model="client.url" ng-trim="false" ng-list="&#10;"></textarea>
 				<input id="admin_input-submit"  type="submit" ng-click="editClient(client._id, client.url)">
 			</form>
-			<p class="users_p red">NOTE: Separate each URL with a return.</p>
+			<p class="users_p_alert animate" ng-if="addedArray">{{addedArray}} photos added to album</p>
+			<br><p class="users_p_alert">NOTE: Separate each URL with a return.</p>
 		</div>
 		<!-- ============== -->
 	</div>

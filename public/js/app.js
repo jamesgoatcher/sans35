@@ -1,4 +1,4 @@
-var app = angular.module('Sans35App', ['ngRoute']);
+var app = angular.module('Sans35App', ['ngRoute', 'ngAnimate']);
 
 	//ROUTES
 	app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
@@ -142,11 +142,10 @@ app.controller('UserCtrl', ['$http', '$scope', '$routeParams', function($http, $
 		var clientInfo = {};
 		clientInfo.id = client;
 		clientInfo.url = url;
-		console.log(url)
+		$scope.addedArray = clientInfo.url.length;
 		$http.post('/users/update/' + client._id, clientInfo)
 		.success(function(data) {
 			$scope.clientList = data;
-			console.log(data);
 		}).error(function(data) {
 			console.log('Error: ' + data);
 		});
