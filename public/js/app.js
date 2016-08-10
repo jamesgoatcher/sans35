@@ -125,14 +125,16 @@ app.controller('UserCtrl', ['$http', '$scope', '$routeParams', function($http, $
 
 	console.log('user page');
 
-	$http ({
-		method: 'GET',
-		url:    '/users/:id'
-	}).success(function(data) {
-		$scope.clientList = data;
-	}).error(function(data) {
-		console.log('Error: ' + data);
-	});
+	// if ($routeParams.id === '57aaa2ce9f2e44381709b526') {
+		$http ({
+			method: 'GET',
+			url:    '/users/:id'
+		}).success(function(data) {
+			$scope.clientList = data;
+		}).error(function(data) {
+			console.log('Error: ' + data);
+		});
+	// };
 
 	$scope.url = 'temp';
 
