@@ -128,7 +128,7 @@ app.controller('UserCtrl', ['$http', '$scope', '$routeParams', function($http, $
 	// if ($routeParams.id === '57aaa2ce9f2e44381709b526') {
 		$http ({
 			method: 'GET',
-			url:    '/users/:id'
+			url:    '/users/57aaa2ce9f2e44381709b526' || '/users/57aac69679906811005e5287'
 		}).success(function(data) {
 			$scope.clientList = data;
 		}).error(function(data) {
