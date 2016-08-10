@@ -44,7 +44,7 @@ router.post('/logout', function(req, res) {
 });
 
 //ADMIN route
-router.get('/57aaa2ce9f2e44381709b526' || '57aac69679906811005e5287', function(req, res) {
+router.get('/57aaa2ce9f2e44381709b526' || '/57aac69679906811005e5287', function(req, res) {
 	User.find({}, function(err, users) {
 		if(!err) {
 			res.send(users)
