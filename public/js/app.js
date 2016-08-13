@@ -5,44 +5,44 @@ var app = angular.module('Sans35App', ['ngRoute', 'ngAnimate']);
 		$locationProvider.html5Mode({ enabled:true });
 
 		$routeProvider.when('/', {
-			templateUrl: 'partials/static/home.html',
+			templateUrl: 'views/static/home.html',
 			controller: 'HomeCtrl',
 		}).when('/about', {
-			templateUrl: 'partials/static/about.html'
+			templateUrl: 'views/static/about.html'
 		}).when('/testimonial', {
-			templateUrl: 'partials/static/testimonial.html'
+			templateUrl: 'views/static/testimonial.html'
 		}).when('/contact', {
-			templateUrl: 'partials/static/contact.html'
+			templateUrl: 'views/static/contact.html'
 		}).when('/engagement', {
-			templateUrl: 'partials/engagement/engagement.html'
+			templateUrl: 'views/engagement/engagement.html'
 		}).when('/wedding', {
-			templateUrl: 'partials/wedding/wedding.html'
+			templateUrl: 'views/wedding/wedding.html'
 		}).when('/signin', {
-			templateUrl: 'partials/user/signin.html',
+			templateUrl: 'views/user/signin.html',
 			controller: 'SignIn',
 				controllerAs: 'signin'
 		}).when('/signup', {
-			templateUrl: 'partials/user/signup.html',
+			templateUrl: 'views/user/signup.html',
 			controller: 'SignUp',
 				controllerAs: 'signup'
 		}).when('/users/:id', {
-			templateUrl: 'partials/user/users.html',
+			templateUrl: 'views/user/users.html',
 			controller: 'UserCtrl',
 				controllerAs: 'user'
 		}).when('/users/:id/album', {
-			templateUrl: 'partials/user/album.html'
+			templateUrl: 'views/user/album.html'
 		}).when('/password', {
-			templateUrl: 'partials/user/password.html'
+			templateUrl: 'views/user/password.html'
 		}).when('/wedding/:id', {
-			templateUrl: 'partials/wedding/show.html',
+			templateUrl: 'views/wedding/show.html',
 			controller: 'WeddingShowCtrl',
 				controllerAs: 'weddingshow'
 		}).when('/engagement/:id', {
-			templateUrl: 'partials/engagement/show.html',
+			templateUrl: 'views/engagement/show.html',
 			controller: 'EngagementShowCtrl',
 				controllerAs: 'engagementshow'
 		}).when('/logout', {
-			templateUrl: 'partials/user/logout.html',
+			templateUrl: 'views/user/logout.html',
 			controller: 'LogOut',
 				controllerAs: 'logout'
 		});
