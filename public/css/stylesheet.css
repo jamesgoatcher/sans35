@@ -991,6 +991,7 @@ i {
 		right: 10px;
 		top: 0;
 		position: fixed;
+		cursor: pointer;
 	}
 
 	.menu_nav_button-m-active {
@@ -1006,6 +1007,7 @@ i {
 		right: 10px;
 		top: 5px;
 		position: fixed;
+		cursor: pointer;
 	}
 
 	.menu_nav_container-m-active {
